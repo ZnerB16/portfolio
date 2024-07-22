@@ -9,12 +9,17 @@ body{
 .main-flex{
     display: flex;
     flex-direction: column;
+    margin-top: 6em;
 }
-.top-bar{
-   
+.nav-bar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
     font-family: sans-serif;
     display: flex;
     color: whitesmoke;
+    z-index: 1;
 }
 .header-div{
     padding: 25px;
@@ -25,7 +30,6 @@ body{
 }
 .title{
     font-size: 40px;
-    
 }
 .page-links{
     display: flex;
@@ -39,8 +43,9 @@ body{
     color: whitesmoke;
     text-decoration: none;
     font-size: 16px;
+    text-align: center;
 }
-#home-link{
+#about-link{
     font-weight: bold;;
 }
 
@@ -66,6 +71,7 @@ body{
     font-size: 20px;
     padding-top: 20px;
     line-height: 1.5em;
+    text-align: justify;
     max-width: 600px;
     padding-bottom: 20px;
 }
@@ -77,12 +83,115 @@ body{
     padding-top: 20px;
 }
 .tech-stack-div{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 4em);
     flex-direction: row;
-    gap: 15px;
+    gap: 20px;
 }
 .tech-stack-div img{
     width: 70px;
     height: 70px;
-    aspect-ratio: 50%;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.projects-section{
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+.card{
+    margin: 1em auto;
+    padding: 3em;
+    width: 60%;
+    background-color: #212121;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.logo:nth-child(2){
+    transition-delay: 150ms;
+}
+.logo:nth-child(3){
+    transition-delay: 300ms;
+}
+.logo:nth-child(4){
+    transition-delay: 450ms;
+}
+.logo:nth-child(5){
+    transition-delay: 600ms;
+}
+.logo:nth-child(6){
+    transition-delay: 750ms;
+}
+.logo:nth-child(7){
+    transition-delay: 900ms;
+}
+.logo:nth-child(8){
+    transition-delay: 1050ms;
+}
+.logo:nth-child(9){
+    transition-delay: 1200ms;
+}
+.img-in-card{
+    width: 200px;
+    height: 200px;
+}
+.project-info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.project-title{
+    color: white;
+    font-size: 32px;
+    flex-grow: 1;
+}
+.more-info-link{
+    color: white;
+    text-align: right;
+    font-size: 22px;
+}
+.project-details{
+    color: rgb(196, 196, 196);
+    font-size: 20px;
+    line-height: 1.5em;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.tech-used{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.tech-used img{
+    width: 40px;
+    height: 40px;
+}
+.contact-container{
+    width: 100%;
+    height: 250px;
+    background: #212121;
+}
+.grid-two{
+    display: flex;
+    color: gray;
+    font-size: 24px;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 5%;
+    padding-top: 5%;
 }

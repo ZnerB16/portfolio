@@ -6,11 +6,10 @@
         <link href="styles.css" rel="stylesheet">
     </head>
     <body>
-        <header class="top-bar">
+        <header class="nav-bar">
             <div class="header-div">
-                <h1 class="title">Brenz's Portfolio</h1>
+                <h1 class="title" id="title">Brenz's Portfolio</h1>
                 <div class="page-links">
-                    <a href="#" id="home-link">Home</a>
                     <a href="#" id="about-link">About Me</a>
                     <a href="#" id="projects-link">Projects</a>
                     <a href="#" id="contact-link">Contact Information</a>
@@ -18,7 +17,7 @@
             </div>
         </header>
         <div class="main-flex">
-        <section>
+        <section class="hidden">
             <div class="details-div">
                 <img src="/images/me.png" class="self-img">
                 <div class="more-info-div">
@@ -30,25 +29,77 @@
                     </p>
                     <p class="self-details">My tech stack includes:</p>
                     <div class="tech-stack-div">
-                        <img src="images/HTML5_logo.png">
-                        <img src="images/CSS_logo.png">
-                        <img src="images/JS_logo.png">
-                        <img src="images/React_logo.png">
-                        <img src="images/Python_logo.png">
+                        <img src="images/HTML5_logo.png" class="logo hidden">
+                        <img src="images/CSS_logo.png" class="logo hidden">
+                        <img src="images/JS_logo.png" class="logo hidden">
+                        <img src="images/React_logo.png" class="logo hidden">
+                        <img src="images/Flutter_logo.png" class="logo hidden">
+                        <img src="images/Python_logo.png" class="logo hidden">
+                        <img src="images/Postgres_logo.png" class="logo hidden">
+                        <img src="images/SQLite_logo.png" class="logo hidden">
+                        <img src="images/Tableau_logo.png" class="logo hidden">
                     </div>
                 </div>
                 
             </div>
         </section>
-        <section class="about-section">
-            
-        </section>
         <section class="projects-section">
-
+            <div class="card hidden">
+                <img src="images/not_found.png" class="img-in-card">
+                <div class="project-info">
+                    <div class="flex-row title-link">
+                        <h3 class="project-title">Lufindin</h3>
+                        <a class="more-info-link" href="#">More Info</a>
+                    </div>
+                    <p class="project-details">Lufindin is a platform to find and sell lot in Mindanao. Lufindin is derived from the word "Lupain" signifying to customers that they can find "lupa" through this platform.</p>
+                    <div class="tech-used">
+                        <img src="images/HTML5_logo.png" class="logo hidden">
+                        <img src="images/CSS_logo.png" class="logo hidden">
+                        <img src="images/JS_logo.png" class="logo hidden">
+                        <img src="images/React_logo.png" class="logo hidden">
+                        <img src="images/Postgres_logo.png" class="logo hidden">
+                    </div>
+                </div>
+            </div>
+            <div class="card hidden">
+                <img src="images/not_found.png" class="img-in-card">
+                <div class="project-info">
+                    <div class="flex-row title-link">
+                        <h3 class="project-title">Coffee Break POS</h3>
+                        <a class="more-info-link" href="#">More Info</a>
+                    </div>
+                    <p class="project-details">Coffee Break POS is a point-of-sales (POS) system that is handled by the cashier to take in customers orders. The application presents a summary of the orders that was placed, and dashboard for sales</p>
+                    <div class="tech-used">
+                        <img src="images/Flutter_logo.png" class="logo hidden">
+                        <img src="images/SQLite_logo.png" class="logo hidden">
+                    </div>
+                </div>
+            </div>
+            <div class="card hidden">
+                <img src="images/not_found.png" class="img-in-card">
+                <div class="project-info">
+                    <div class="flex-row title-link">
+                        <h3 class="project-title">Crack Identification Classifier (CIC)</h3>
+                        <a class="more-info-link" href="#">More Info</a>
+                    </div>
+                    <p class="project-details">CIC is a thesis project that was created to implement a concrete crack severity classifier. We trained 2 existing models to create an ensemble model called the BayesCrack Convolutional Ensemble. </p>
+                    <div class="tech-used">
+                        <img src="images/Python_logo.png" class="logo hidden">
+                        <img src="images/Flutter_logo.png" class="logo hidden">
+                        <img src="images/SQLite_logo.png" class="logo hidden"   >
+                    </div>
+                </div>
+            </div>
         </section>
         <footer class="contact-footer">
-            
+            <div class="contact-container">
+                <div class="grid-two">
+                    <h4>Contact Number: +639981966278</h4>
+                    <h4>Email: brenzgwynnehababag@gmail.com</h4>
+                </div>
+            </div>
         </footer>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
